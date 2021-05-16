@@ -1,1 +1,0 @@
-# akkaraju-satvik.github.io
