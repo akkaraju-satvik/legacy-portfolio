@@ -1,0 +1,30 @@
+.sectionAbout {
+    position: relative;
+    height: 80vh;
+
+    &__title {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-10%);
+    }
+    &__paragraph {
+        position: absolute;
+        width: 30%;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__photograph {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &__links {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);        
+    }
+}

@@ -1,0 +1,15 @@
+@import "./abstracts/variables";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+@import "./components/cards";
+@import "./components/projectCard";
+
+@import "./layout/header";
+@import "./layout/about";
+@import "./layout/skills";
+@import "./layout/projects";
+@import "./layout/mediaQueries";
+@import "./layout/footer";

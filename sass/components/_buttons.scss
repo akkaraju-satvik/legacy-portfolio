@@ -1,0 +1,33 @@
+.link {
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+    text-decoration: none;
+    border-radius: 20%/50%;
+    padding: 1rem 2.5rem;
+
+    &--github {
+        font-family: 'PT Sans', serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #fff;
+        background-color: #000;
+    }
+
+    &--linkedin {
+        font-family: 'Source Sans Pro', serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+        background-color: #0b5e86;
+        color: #fff;
+    }
+
+    &--instagram {
+        font-family: 'Grand Hotel', serif;
+        font-size: 1.4rem;
+        color: #fff;
+        background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    }
+
+}

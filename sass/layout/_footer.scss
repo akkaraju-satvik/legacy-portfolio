@@ -1,0 +1,30 @@
+.footer {
+    height: 20vh;
+    position: relative;
+    &__copyright {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 1rem;
+    }
+    &__link {
+        position: absolute;
+        font-size: 1rem;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        a {
+            &:link, &:visited {
+                text-decoration: none;
+                color: #fff;
+                padding: 1rem 2rem;
+                background-color: #000;
+                border-radius: 20%/50%;
+            }
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+        }
+    }
+}

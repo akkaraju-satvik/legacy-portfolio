@@ -1,0 +1,57 @@
+.row {
+    display: flex;
+    justify-content: space-around;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+.card {
+    position: relative;
+    font-size: 1rem;
+    height: 10rem;
+    border-radius: 3%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    
+    text-align: center;
+
+    width: 15rem;
+    padding: 8rem;
+
+    
+    &__title {
+        position: absolute;
+        top: 40%;
+        left: 47%;
+        transform: translate(-50%,-50%);
+    }
+    
+    &__percentage {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
+
+    &--python {
+        background-image: linear-gradient(to right bottom, #3470A0 25%, #FFD542 75% )
+    }
+    &--c {
+        background-color: #03599C;
+    }
+    &--cpp {
+        background-color: #659BD3;
+    }
+    &--html-css {
+        background-image: linear-gradient(to right bottom, #E44F26 25%, #1572B6 75%);
+    }
+    &--js {
+        background-color: #F5DE19;
+    }
+    &--sass {
+        background-color: #CE679A;
+    }
+}

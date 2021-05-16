@@ -1,0 +1,28 @@
+header {
+    position: sticky;
+}
+
+.header {
+    border-radius: 3%/50%;
+    height: 10vh;
+    background-image: linear-gradient(to right bottom, #bbb4, #999);
+    position: relative;
+
+    &__portrait {
+        width: 3%;
+        border-radius: 100%;
+        
+        &Box {
+            position: absolute;
+            top: 1.25rem;
+            left: 3rem;
+        }
+    }
+
+    &__textBox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

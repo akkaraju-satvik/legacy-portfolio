@@ -1,0 +1,17 @@
+.sectionProjects {
+    height: 100vh;
+    position: relative;
+
+    &__title {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-10%);
+    }
+    
+    &__projects {
+        position: relative;
+        top: 25%;
+        margin: 0 15rem;
+    }
+}

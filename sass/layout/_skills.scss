@@ -1,0 +1,17 @@
+.sectionSkills {
+    position: relative;
+    height: 100vh;
+
+    &__title {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%,-10%);
+    }
+
+    &__skills {
+        position: relative;
+        top: 30%;
+        margin: 0 15rem;
+    }
+}

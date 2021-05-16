@@ -1,0 +1,612 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  padding: 0.5rem;
+  min-width: 100vh;
+  min-height: 100vh;
+  background-color: #ddd; }
+  body::-webkit-scrollbar {
+    width: 1rem; }
+    body::-webkit-scrollbar:not(:hover) {
+      opacity: 0; }
+  body::-webkit-scrollbar-track {
+    background: #5553;
+    border-radius: 10rem; }
+  body::-webkit-scrollbar-thumb {
+    background-color: #5556;
+    border-radius: 1rem; }
+    body::-webkit-scrollbar-thumb:hover {
+      background-color: #5559; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 62.5%; }
+
+.headingPrimary {
+  text-align: center;
+  text-transform: uppercase; }
+  .headingPrimary--main {
+    font-size: 2rem;
+    line-height: 1.7;
+    letter-spacing: 0.5rem; }
+  .headingPrimary--sub {
+    letter-spacing: 0.2rem; }
+
+.headingSecondary {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem; }
+
+.paragraph {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem; }
+
+.sectionAbout__links {
+  font-size: 1rem; }
+
+.link {
+  text-decoration: none;
+  border-radius: 20%/50%;
+  padding: 1rem 2.5rem; }
+  .link:not(:last-child) {
+    margin-right: 2rem; }
+  .link--github {
+    font-family: 'PT Sans', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #000; }
+  .link--linkedin {
+    font-family: 'Source Sans Pro', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #0b5e86;
+    color: #fff; }
+  .link--instagram {
+    font-family: 'Grand Hotel', serif;
+    font-size: 1.4rem;
+    color: #fff;
+    background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); }
+
+.row {
+  display: flex;
+  justify-content: space-around; }
+  .row:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.card {
+  position: relative;
+  font-size: 1rem;
+  height: 10rem;
+  border-radius: 3%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 15rem;
+  padding: 8rem; }
+  .card__title {
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    transform: translate(-50%, -50%); }
+  .card__percentage {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%); }
+  .card--python {
+    background-image: linear-gradient(to right bottom, #3470A0 25%, #FFD542 75%); }
+  .card--c {
+    background-color: #03599C; }
+  .card--cpp {
+    background-color: #659BD3; }
+  .card--html-css {
+    background-image: linear-gradient(to right bottom, #E44F26 25%, #1572B6 75%); }
+  .card--js {
+    background-color: #F5DE19; }
+  .card--sass {
+    background-color: #CE679A; }
+
+.project-card {
+  position: relative;
+  font-size: 1rem;
+  height: 19rem;
+  border-radius: 3%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #eee;
+  width: 15rem;
+  padding: 8rem; }
+  .project-card__title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .project-card__links {
+    text-align: center;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -60%); }
+  .project-card__link {
+    display: block;
+    text-decoration: none; }
+    .project-card__link:link, .project-card__link:visited {
+      color: #fff;
+      background-color: #000;
+      padding: 1rem;
+      border-radius: 20%/50%; }
+    .project-card__link:not(:last-child) {
+      margin-bottom: 1rem; }
+
+header {
+  position: sticky; }
+
+.header {
+  border-radius: 3%/50%;
+  height: 10vh;
+  background-image: linear-gradient(to right bottom, #bbb4, #999);
+  position: relative; }
+  .header__portrait {
+    width: 3%;
+    border-radius: 100%; }
+    .header__portraitBox {
+      position: absolute;
+      top: 1.25rem;
+      left: 3rem; }
+  .header__textBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.sectionAbout {
+  position: relative;
+  height: 80vh; }
+  .sectionAbout__title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%); }
+  .sectionAbout__paragraph {
+    position: absolute;
+    width: 30%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .sectionAbout__photograph {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .sectionAbout__links {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.sectionSkills {
+  position: relative;
+  height: 100vh; }
+  .sectionSkills__title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -10%); }
+  .sectionSkills__skills {
+    position: relative;
+    top: 30%;
+    margin: 0 15rem; }
+
+.sectionProjects {
+  height: 100vh;
+  position: relative; }
+  .sectionProjects__title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%); }
+  .sectionProjects__projects {
+    position: relative;
+    top: 25%;
+    margin: 0 15rem; }
+
+@media (min-width: 320px) {
+  .header {
+    border-radius: 15%/50%;
+    height: 30vh; }
+    .header__portrait {
+      width: 10%; }
+      .header__portraitBox {
+        top: 5rem; }
+  .headingPrimary--main {
+    margin-left: 3rem;
+    width: fit-content;
+    font-size: 3rem;
+    display: flex; }
+    .headingPrimary--main1 {
+      margin-right: 1rem; }
+  .headingPrimary--sub {
+    font-size: 1.5rem;
+    margin-left: 2.5rem; }
+  .headingSecondary {
+    font-size: 2.5rem; }
+  .sectionAbout {
+    height: 150vh; }
+    .sectionAbout__paragraph {
+      top: 47.5%;
+      width: 75%; }
+      .sectionAbout__paragraph .paragraph {
+        font-size: 2rem; }
+    .sectionAbout__photograph {
+      top: 25%; }
+    .sectionAbout__links {
+      top: 80%; }
+    .sectionAbout .link {
+      font-size: 2rem;
+      border-radius: 15%/50%;
+      width: 100%;
+      display: block;
+      text-align: center; }
+      .sectionAbout .link:not(:last-child) {
+        margin-bottom: 2rem; }
+  .sectionSkills {
+    height: 270vh; }
+    .sectionSkills__title {
+      top: 5%; }
+    .sectionSkills__skills {
+      top: 10%;
+      margin: 0 10rem; }
+  .row {
+    display: block; }
+    .row:last-child {
+      margin-top: 3rem; }
+  .card, .project-card {
+    font-size: 1.5rem;
+    width: 100%;
+    height: 20rem; }
+    .card:not(:last-child), .project-card:not(:last-child) {
+      margin-bottom: 3rem; }
+  .project-card {
+    height: 25rem; }
+  .sectionProjects {
+    height: 360vh; }
+    .sectionProjects__title {
+      top: 5%; }
+    .sectionProjects__projects {
+      top: 10%;
+      margin: 0 10rem; }
+  .footer {
+    width: auto; }
+    .footer__link {
+      width: fit-content; } }
+
+@media (min-width: 425px) {
+  .header {
+    border-radius: 15%/50%;
+    height: 30vh; }
+    .header__portrait {
+      width: 10%; }
+      .header__portraitBox {
+        top: 5rem; }
+  .headingPrimary--main {
+    margin-left: 3rem;
+    width: fit-content;
+    font-size: 3rem;
+    display: flex; }
+    .headingPrimary--main1 {
+      margin-right: 1rem; }
+  .headingPrimary--sub {
+    font-size: 1.5rem;
+    margin-left: 2.5rem; }
+  .headingSecondary {
+    font-size: 2.5rem; }
+  .sectionAbout {
+    height: 150vh; }
+    .sectionAbout__paragraph {
+      top: 47.5%;
+      width: 75%; }
+      .sectionAbout__paragraph .paragraph {
+        font-size: 2rem; }
+    .sectionAbout__photograph {
+      top: 25%; }
+    .sectionAbout__links {
+      top: 80%; }
+    .sectionAbout .link {
+      font-size: 2rem;
+      border-radius: 15%/50%;
+      width: 100%;
+      display: block;
+      text-align: center; }
+      .sectionAbout .link:not(:last-child) {
+        margin-bottom: 2rem; }
+  .sectionSkills {
+    height: 240vh; }
+    .sectionSkills__title {
+      top: 5%; }
+    .sectionSkills__skills {
+      top: 10%; }
+  .row {
+    display: block; }
+    .row:last-child {
+      margin-top: 3rem; }
+  .card, .project-card {
+    font-size: 1.5rem;
+    width: 100%; }
+    .card:not(:last-child), .project-card:not(:last-child) {
+      margin-bottom: 3rem; }
+  .project-card {
+    height: 25rem; }
+  .sectionProjects {
+    height: 360vh; }
+    .sectionProjects__title {
+      top: 5%; }
+    .sectionProjects__projects {
+      top: 10%; } }
+
+@media (min-width: 768px) {
+  .header {
+    border-radius: 5%/50%;
+    height: 10vh; }
+    .header__portrait {
+      width: 6%; }
+      .header__portraitBox {
+        top: 1rem; }
+  .headingPrimary--main {
+    margin-left: 3rem;
+    width: fit-content;
+    font-size: 2rem;
+    display: flex; }
+    .headingPrimary--main1 {
+      margin-right: 1rem; }
+  .headingPrimary--sub {
+    font-size: 1rem;
+    margin-left: 2.5rem; }
+  .headingSecondary {
+    font-size: 1.75rem; }
+  .sectionAbout {
+    height: 120vh; }
+    .sectionAbout__title {
+      top: 10%; }
+    .sectionAbout__paragraph {
+      top: 42.5%;
+      width: 75%; }
+      .sectionAbout__paragraph .paragraph {
+        font-size: 1.2rem; }
+    .sectionAbout__photograph {
+      top: 25%; }
+    .sectionAbout__links {
+      top: 65%; }
+    .sectionAbout .link {
+      font-size: 1rem;
+      border-radius: 15%/50%;
+      width: 100%;
+      display: block;
+      text-align: center; }
+      .sectionAbout .link:not(:last-child) {
+        margin-bottom: 2rem; }
+  .sectionSkills {
+    height: 240vh; }
+    .sectionSkills__title {
+      top: 5%; }
+    .sectionSkills__skills {
+      top: 10%; }
+  .row {
+    display: block; }
+    .row:last-child {
+      margin-top: 3rem; }
+  .card, .project-card {
+    font-size: 1.5rem;
+    width: 100%; }
+    .card:not(:last-child), .project-card:not(:last-child) {
+      margin-bottom: 3rem; }
+  .project-card {
+    height: 25rem; }
+  .sectionProjects {
+    height: 350vh; }
+    .sectionProjects__projects {
+      top: 10%; }
+    .sectionProjects__title {
+      top: 5%; } }
+
+@media (min-width: 1024px) {
+  .header {
+    height: 12vh; }
+    .header__portrait {
+      width: 6%; }
+      .header__portraitBox {
+        top: 1.3rem; }
+  .headingPrimary--main {
+    margin-left: 3rem;
+    width: fit-content;
+    font-size: 2rem;
+    display: flex; }
+    .headingPrimary--main1 {
+      margin-right: 1rem; }
+  .headingPrimary--sub {
+    font-size: 1rem;
+    margin-left: 2.5rem; }
+  .headingSecondary {
+    font-size: 1.75rem; }
+  .sectionAbout {
+    height: 90vh; }
+    .sectionAbout__title {
+      top: 10%; }
+    .sectionAbout__paragraph {
+      top: 65%;
+      width: 75%; }
+      .sectionAbout__paragraph .paragraph {
+        font-size: 1.2rem; }
+    .sectionAbout__photograph {
+      top: 35%; }
+    .sectionAbout__links {
+      top: 90%;
+      width: fit-content; }
+    .sectionAbout .link {
+      font-size: 1rem;
+      border-radius: 15%/50%;
+      width: 100%;
+      display: inline;
+      text-align: center; }
+  .sectionSkills {
+    height: 92vh; }
+    .sectionSkills__title {
+      top: 5%; }
+    .sectionSkills__skills {
+      top: 17.5%;
+      margin: 0 2rem; }
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; }
+    .row:last-child {
+      margin-top: 3rem; }
+  .card, .project-card {
+    font-size: 1.2rem;
+    width: 10%; }
+  .project-card {
+    height: 20rem; }
+  .sectionProjects {
+    height: 120vh; }
+    .sectionProjects__projects {
+      top: 20%;
+      margin: 0 2rem; }
+    .sectionProjects__title {
+      top: 10%; } }
+
+@media (min-width: 1800px) {
+  .header {
+    height: 10vh; }
+    .header__portrait {
+      width: 4%; }
+      .header__portraitBox {
+        top: 0.75rem; }
+  .headingPrimary--main {
+    margin-left: 3rem;
+    width: fit-content;
+    font-size: 2rem;
+    display: flex; }
+    .headingPrimary--main1 {
+      margin-right: 1rem; }
+  .headingPrimary--sub {
+    font-size: 1rem;
+    margin-left: 2.5rem; }
+  .headingSecondary {
+    font-size: 1.75rem; }
+  .sectionAbout {
+    height: 90vh; }
+    .sectionAbout__title {
+      top: 10%; }
+    .sectionAbout__paragraph {
+      top: 60%;
+      width: 50%; }
+      .sectionAbout__paragraph .paragraph {
+        font-size: 1.2rem; }
+    .sectionAbout__photograph {
+      top: 35%; }
+    .sectionAbout__links {
+      top: 80%;
+      width: fit-content; }
+    .sectionAbout .link {
+      font-size: 1rem;
+      border-radius: 15%/50%;
+      width: 100%;
+      display: inline;
+      text-align: center; }
+  .sectionSkills {
+    height: 92vh; }
+    .sectionSkills__title {
+      top: 5%; }
+    .sectionSkills__skills {
+      top: 17.5%;
+      margin: 0 2rem; }
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; }
+    .row:last-child {
+      margin-top: 3rem; }
+  .card, .project-card {
+    font-size: 1.2rem;
+    width: 10%; }
+  .project-card {
+    height: 20rem; }
+  .sectionProjects {
+    height: 120vh; }
+    .sectionProjects__projects {
+      top: 20%;
+      margin: 0 2rem; }
+    .sectionProjects__title {
+      top: 10%; } }
+
+@media (min-width: 2500px) {
+  .header {
+    border-radius: 3%/50%; }
+    .header__portraitBox {
+      top: 1.5rem; }
+  .sectionAbout {
+    height: 90vh; }
+    .sectionAbout__title {
+      top: 10%; }
+    .sectionAbout__paragraph {
+      top: 50%;
+      width: 50%; }
+      .sectionAbout__paragraph .paragraph {
+        font-size: 1.2rem; }
+    .sectionAbout__photograph {
+      top: 30%; }
+    .sectionAbout__links {
+      top: 70%;
+      width: fit-content; }
+    .sectionAbout .link {
+      font-size: 1rem;
+      border-radius: 15%/50%;
+      width: 100%;
+      display: inline;
+      text-align: center; }
+  .sectionSkills {
+    height: 85vh; }
+    .sectionSkills__title {
+      top: 10%; }
+    .sectionSkills__skills {
+      top: 30%; }
+  .sectionProjects {
+    height: 95vh; }
+    .sectionProjects__title {
+      top: 15%; }
+    .sectionProjects__projects {
+      top: 30%; } }
+
+.footer {
+  height: 20vh;
+  position: relative; }
+  .footer__copyright {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem; }
+  .footer__link {
+    position: absolute;
+    font-size: 1rem;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .footer__link a:link, .footer__link a:visited {
+      text-decoration: none;
+      color: #fff;
+      padding: 1rem 2rem;
+      background-color: #000;
+      border-radius: 20%/50%; }
+    .footer__link a:not(:last-child) {
+      margin-right: 3rem; }
